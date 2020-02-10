@@ -1,0 +1,48 @@
+.slider__item {
+    background-size: cover;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+
+.slider1 {
+    background-image: url("../img/slide-1-1748x874.jpg");
+    
+}
+
+.slider2 {
+    background-image: url("../img/slide-2-1748x874.jpg");
+}
+
+.slider3 {
+    background-image: url("../img/slide-3-1748x874.jpg");
+}
+
+.slider__text {
+    margin-top: 130px;
+    transition: 1s;
+    opacity: 0;
+    color: #fff;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.slider__text--bold {
+    display: block;
+    margin-top: 7px;
+    font-family: "ubuntu-regular", "Arial";
+    font-weight: 700;
+    font-size: 110px;
+    line-height: 110px;
+}
+
+.slider__text--yellow {
+    color: #f9ed2c;
+}
+
+.slider__text--yellow span {
+    color: #3bf9e6;
+}
+
