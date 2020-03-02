@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="950" height="930" viewBox="0 40 950 930">
+
+	<title>Saint Petersburg Metro map in Russian</title>
+
+	<defs>
+		<style type="text/css">
+text {font-family:Liberation Sans,Arial,Helvetica,sans-serif}
+.st {font-size:13px;fill:#000}
+.legendtext {font-size:15px;fill:#000}
+.x {fill:#aaa}
+.i {font-style:italic}
+.num {font-size:12px}
+.ic {font-weight:bold}
+.mid {text-anchor:middle}
+.end {text-anchor:end}
+.mebg {fill:none;stroke:#fff;stroke-width:7}
+.me {fill:none;stroke-width:5}
+.med {fill:none;stroke-width:5;stroke-dasharray:4,3}
+.mex {fill:none;stroke-width:4;stroke:#fff}
+.s1 {stroke:#d6083b}
+.f1 {fill:#d6083b}
+.s2 {stroke:#0078c9}
+.f2 {fill:#0078c9}
+.s3 {stroke:#009a49}
+.f3 {fill:#009a49}
+.s4 {stroke:#ea7125}
+.f4 {fill:#ea7125}
+.s5 {stroke:#702785}
+.f5 {fill:#702785}
+.s6 {stroke:#8d5b2d}
+.s6x {stroke:#c7a586}
+.f6 {fill:#8d5b2d}
+.f6x {fill:#c7a586}
+.s7 {stroke:#999999}
+.f7 {fill:#999999}
+.s8 {stroke:#FFD702}
+.f8 {fill:#FFD702}
+.intb {fill:none;stroke:#000;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+.intf {fill:none;stroke:#fff;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+		</style>
+
+		<circle id="ele-int" cx="0" cy="0" r="9" style="fill:white;stroke:black;stroke-width:1" />
+
+		<g id="int2">
+			<path class="intb" d="M 0,0 L 27,0"/>
+			<use xlink:href="#ele-int" x="0" y="0"/>
+			<use xlink:href="#ele-int" x="28" y="0"/>
+			<path class="intf" d="M 0,0 L 28,0"/>
+		</g>
+		
+		<g id="int2s">
+			<path class="intb" d="M 0,0 L 20,20"/>
+			<use xlink:href="#ele-int" x="0" y="0"/>
+			<use xlink:href="#ele-int" x="20" y="20"/>
+			<path class="intf" d="M 0,0 L 20,20"/>
+		</g>
+
+		<g id="int3-1">
+			<path class="intb" d="M 0,0 L 57,0"/>
+			<use xlink:href="#ele-int" x="0" y="0"/>
+			<use xlink:href="#ele-int" x="28" y="0"/>
+			<use xlink:href="#ele-int" x="57" y="0"/>
+			<path class="intf" d="M 0,0 L 57,0"/>
+		</g>
+
+		<g id="int3-2">
+			<path class="intb" d="M 0,0 L 18,18 0,36 z"/>
+			<use xlink:href="#ele-int" x="0" y="0"/>
+			<use xlink:href="#ele-int" x="18" y="18"/>
+			<use xlink:href="#ele-int" x="0" y="36"/>
+			<path class="intf" d="M 0,0 L 18,18 0,36 z"/>
+		</g>
+
+		<g id="int4">
+			<path class="intb" d="M 18,0 L 36,18 18,36 0,18 z"/>
+			<use xlink:href="#ele-int" x="18" y="0"/>
+			<use xlink:href="#ele-int" x="36" y="18"/>
+			<use xlink:href="#ele-int" x="18" y="36"/>
+			<use xlink:href="#ele-int" x="0" y="18"/>
+			<path class="intf" d="M 18,0 L 36,18 18,36 0,18 z"/>
+		</g>
+
+		<g id="intst" style="stroke:none">
+			<path d="M 0,0 L 0,-2 4,-4 9,0 4,4 0,2 z" fill="black"/>
+			<circle cx="0" cy="0" r="7" fill="black"/>
+			<circle cx="0" cy="0" r="6"/>
+		</g>
+
+		<g id="termd">
+			<path id="term" class="me" d="M -8,0 L 8,0"/>
+			<circle cx="0" cy="0" r="1" style="fill:white;stroke:none"/>
+		</g>
+
+		<g id="termx">
+			<use xlink:href="#term"/>
+			<path class="mex" d="
+			M -7.5,0 L 7.5,0
+			M 0,0 v 3
+			"/>
+		</g>
+
+		<g id="std">
+			<path id="st" class="me" d="M 0,0 L 8,0"/>
+			<circle cx="0" cy="0" r="1" style="fill:white;stroke:none"/>
+		</g>
+
+		<g id="stx">
+			<path class="me" d="M 2.5,0 L 8,0"/>
+			<path class="mex" d="M 0,0 L 7.5,0"/>
+		</g>
+
+		<use xlink:href="#st" id="st1" class="s1"/>
+		<use xlink:href="#std" id="std1" class="s1"/>
+		<use xlink:href="#term" id="term1" class="s1"/>
+		<use xlink:href="#termd" id="termd1" class="s1"/>
+		<use xlink:href="#intst" id="intst1" class="f1"/>
+		<path id="intst1h" d="M 0,0 l 0,-6 a 6,6 1 0,0 0,12 z" class="f1"/>
+
+		<use xlink:href="#st" id="st2" class="s2"/>
+		<use xlink:href="#std" id="std2" class="s2"/>
+		<use xlink:href="#term" id="term2" class="s2"/>
+		<use xlink:href="#termd" id="termd2" class="s2"/>
+		<use xlink:href="#intst" id="intst2" class="f2"/>
+		<path id="intst2h" d="M 0,0 l 0,-6 a 6,6 1 0,0 0,12 z" class="f2"/>
+
+		<use xlink:href="#st" id="st3" class="s3"/>
+		<use xlink:href="#std" id="std3" class="s3"/>
+		<use xlink:href="#term" id="term3" class="s3"/>
+		<use xlink:href="#termd" id="termd3" class="s3"/>
+		<use xlink:href="#intst" id="intst3" class="f3"/>
+
+		<use xlink:href="#st" id="st4" class="s4"/>
+		<use xlink:href="#stx" id="stx4" class="s4"/>
+		<use xlink:href="#std" id="std4" class="s4"/>
+		<use xlink:href="#term" id="term4" class="s4"/>
+		<use xlink:href="#termx" id="termx4" class="s4"/>
+		<use xlink:href="#intst" id="intst4" class="f4"/>
+
+		<use xlink:href="#st" id="st5" class="s5"/>
+		<use xlink:href="#stx" id="stx5" class="s5"/>
+		<use xlink:href="#std" id="std5" class="s5"/>
+		<use xlink:href="#term" id="term5" class="s5"/>
+		<use xlink:href="#termx" id="termx5" class="s5"/>
+		<use xlink:href="#intst" id="intst5" class="f5"/>
+
+		<use xlink:href="#st" id="st6" class="s6"/>
+		<use xlink:href="#stx" id="stx6" class="s6"/>
+		<use xlink:href="#std" id="std6" class="s6"/>
+		<use xlink:href="#term" id="term6" class="s6"/>
+		<use xlink:href="#termx" id="termx6" class="s6"/>
+		<use xlink:href="#intst" id="intst6" class="f6"/>
+		<use xlink:href="#intst" id="intstx6" class="f6x"/>
+
+		<use xlink:href="#st" id="st7" class="s7"/>
+		<use xlink:href="#std" id="std7" class="s7"/>
+		<use xlink:href="#term" id="term7" class="s7"/>
+		<use xlink:href="#intst" id="intst7" class="f7"/>
+
+		<use xlink:href="#st" id="st8" class="s8"/>
+		<use xlink:href="#std" id="std8" class="s8"/>
+		<use xlink:href="#term" id="term8" class="s8"/>
+		<use xlink:href="#intst" id="intst8" class="f8"/>
+
+		<g id="train" transform="matrix(0.07 0 0 0.08 -53,-13)">
+			<g style="fill-rule:evenodd;stroke:none">
+				<path style="fill:#000" d="
+				M 1009,214 
+				L 778,214 
+				C 767,214 754,197 754,186 
+				C 754,167 755,148 755,130 
+				C 758,109 766,90 774,71 
+				C 776,67 779,63 784,63 
+				L 867,63 
+				C 875,66 883,69 886,78 
+				C 910,137 958,165 1012,175 
+				L 1012,211 
+				C 1012,212 1010,214 1009,214 
+				z"/>
+				<path style="fill:#fff" d="
+				M 770,114 
+				L 875,114 
+				C 878,114 879,108 877,105 
+				C 874,95 869,75 864,75 
+				L 783,75 
+				C 778,75 773,95 768,105 
+				C 767,109 768,114 770,114 
+				z"/>
+			</g>
+			<g style="fill:#fff;fill-rule:nonzero;stroke:none">
+				<path id="lamp" d="
+				M 787,164 
+				C 787,170 783,174 778,174 
+				C 773,174 768,170 768,164 
+				C 768,159 773,155 778,155 
+				C 783,155 787,159 787,164 
+				z"/>
+				<path transform="translate(80,0)" d="
+				M 787,164 
+				C 787,170 783,174 778,174 
+				C 773,174 768,170 768,164 
+				C 768,159 773,155 778,155 
+				C 783,155 787,159 787,164 
+				z"/>
+			</g>
+			<g style="fill:#fff;fill-rule:evenodd;stroke:none">
+				<path d="M 913,136 L 913,171 L 897,163 C 896,149 895,134 895,119 C 901,124 908,132 913,136 z"/>
+				<path d="M 937,155 L 938,182 L 922,175 C 922,161 922,159 922,144 C 929,150 932,151 937,155 z"/>
+				<path d="M 945,160 L 945,184 C 950,186 955,187 960,188 L 960,166 L 945,160 z"/>
+				<path d="M 966,169 L 966,190 C 970,191 974,192 978,192 L 978,172 L 966,169 z"/>
+				<path d="M 984,174 L 984,193 C 987,194 991,194 994,194 L 994,176 L 984,174 z"/>
+				<path d="M 999,177 L 999,195 L 1007,196 L 1007,178 L 999,177 z"/>
+			</g>
+			<path style="fill:#000" d="
+			M 754,229 
+			L 774,229 
+			L 774,219 
+			L 804,219 
+			L 804,229 
+			L 848,229 
+			L 848,219 
+			L 1012,219 
+			L 1012,229 C 966,230 919,232 894,243 
+			L 754,243 
+			L 754,229 
+			z"/>
+		</g>
+
+		<linearGradient id="bshade1" gradientUnits="objectBoundingBox">
+			<stop offset="10%" stop-opacity="1" stop-color="#000"/>
+			<stop offset="100%" stop-opacity="1" stop-color="#777"/>
+		</linearGradient>
+		<linearGradient id="bshade2" gradientUnits="objectBoundingBox">
+			<stop offset="0%" stop-opacity="1" stop-color="#888"/>
+			<stop offset="100%" stop-opacity="1" stop-color="#111"/>
+		</linearGradient>
+	</defs>
+
+	<rect x="-200" y="-200" width="3000" height="3000"  style="fill:#fff"/>
+
+	<g id="terrain" opacity="1">
+		<path id="Baltic_Sea" style="fill:#e2fcfc;stroke:none" d="
+		M -200,265
+		L 260,265 c 30,0 60,30 90,30
+		l 40,0 c 30,0 60,30 90,30
+		L 500,330 c -30,0 -60,30 -90,25
+		L 200,355 q -15,0 -30,15
+		l -25,25 q -15,15 -15,30
+		l 0,50 q 0,15 -15,30
+		l -300,300
+		z"/>
+
+		<path id="Bolshaya_Nevka_river" style="stroke-width:15;fill:none;stroke:#e2fcfc;stroke-linejoin:round;opacity:1" d="
+		M -200,265
+		L 240,265 c 30,0 60,30 90,30
+		l 60,0 c 30,0 60,30 90,30
+		l 150,0 a 40,40 0 0,1 40,40
+		l 0,475
+		"/>
+
+		<g id="islands" style="fill:white;stroke:none">
+			<path id="Cross_Island" d="
+			M 20,270 H 245 q 20,0 50,17
+			q 20,5 0,5
+			H 20 a 10,10 0 0,1 -10,-10
+			V 280 a 10,10 0 0,1 10,-10
+			z"/>
+
+			<path id="island2" d="
+			M 60,297 H 400 q 100,30 30,50
+			H 180 q -15,0 -50,-15
+			L 60,302 q -10,-5 0,-5
+			z"/>
+
+			<path id="Vasil_Island" d="
+			M -10,305 H 40 q 15,0 50,15
+			L 143,343 q 30,10 35,10
+			q 10,0 5,2
+			q -7,0 -12,5
+			l -40,40 q -15,15 -15,36
+			v 40 q 0,25 -34,10
+			l -500,-200
+			z"/>
+		</g>
+	</g>
+
+	<g id="metro_routes" style="fill:none">
+		<g>
+			<title>M6 Красносельско-Калининская линия</title>
+			<g class="med s6">
+				<path id="route6" d="
+				M 80,635
+				H 409 q 14,0 24,-10
+				L 450,608
+				"/>
+			</g>
+			<use xlink:href="#route6" class="mex"/>
+		</g>
+		
+		<g>
+			<title>M5 Фрунзенско-Приморская линия</title>
+			<path id="route5" class="me s5" d="
+			M 180,220
+			L 180,402 a 30,30 0 0,0 30,30
+			L 288,432 q 14,0 24,10
+			L 470,600
+			q 10,10 10,24
+			L 480,790
+			"/>
+		</g>
+		
+		<g>
+			<title>M4 Правобережная линия</title>
+			<path id="route4" d="
+			M 312,478
+			L 750,478 a 30,30 0 0,1 30,30
+			L 780,580
+			"/>
+			<use xlink:href="#route4" class="mebg"/>
+			<use xlink:href="#route4" class="me s4"/>
+			<g class="med s4">
+				<path id="route4x" d="M 90,478 H 312"/>
+			</g>
+			<use xlink:href="#route4x" class="mex"/>
+		</g>
+		
+		<g>
+			<title>M3 Невско-Василеостровская линия</title>
+			<path id="route3" d="
+			M 30,250
+			L 30,368 q 0,30 30,30
+			L 600,398 a 30,30 0 0,1 30,30
+			L 630,670
+			"/>
+			<use xlink:href="#route3" class="mebg"/>
+			<use xlink:href="#route3" class="me s3"/>
+		</g>
+		
+		<g>
+			<title>M2 Московско-Петроградская линия</title>
+			<path id="route2" d="M 330,130 L 330,790"/>
+			<use xlink:href="#route2" class="mebg"/>
+			<use xlink:href="#route2" class="me s2"/>
+		</g>
+		
+		<g>
+			<title>M1 Кировско-Выборгская линия</title>
+			<path id="route1" d="
+			M 480,100
+			L 480,450 q 0,14 -10,24
+			L 437,507 q -10,10 -24,10
+			L 330,517 q -14,0 -24,10
+			L 190,643 q -10,10 -10,24
+			L 180,730
+			"/>
+			<use xlink:href="#route1" class="mebg"/>
+			<use xlink:href="#route1" class="me s1"/>
+		</g>
+	</g>
+
+	<g id="interchange_base">
+		<use xlink:href="#int2" transform="translate(480,370)rotate(90)" id="Ploshchad_Vosstaniya-Mayakovskaya"/>
+		<use xlink:href="#int2" transform="translate(330,370)rotate(90)" id="Nevsky_Prospekt-Gostiny_Dvor"/>
+		<use xlink:href="#int2" transform="translate(480,450)rotate(90)" id="Vladimirskaya-Dostoyevskaya"/>
+		<use xlink:href="#int2" transform="translate(630,450)rotate(90)" id="Ploshcha_Aleksandra_Nevskogo"/>
+		<use xlink:href="#int2" transform="translate(412.7,517.3)rotate(90)" id="Pushkinskaya-Zvenigorodskaya"/><!--
+		<use xlink:href="#int2" transform="translate(180,370)rotate(90)" id="Admiralteyskaya"/>-->
+
+		<use xlink:href="#int2" transform="translate(226,607)rotate(90)" id="Kirovsky_Zavod-Yugo-Zapadnaya"/>
+		<use xlink:href="#int2s" transform="translate(330,615)rotate(90)" id="Moskovskiye_Vorota-Zastavskaya"/>
+		<use xlink:href="#int2" transform="translate(450,580)rotate(90)" id="Obvodny_Kanal-Karetnaya"/>
+
+		<use xlink:href="#int3-2" transform="translate(312,442)rotate(0)" id="Sennaya_Ploshchad-Sadovaya-Spasskaya"/>
+	</g>
+
+	<g id="station_nodes">
+		<g transform="translate(480,100)">
+			<use xlink:href="#termd1" transform="translate(0,0)rotate(0)" id="Devyatkino"/>
+			<use xlink:href="#st1" transform="translate(0,30)rotate(0)" id="Grazhdansky_Prospekt"/>
+			<use xlink:href="#st1" transform="translate(0,60)rotate(0)" id="Akademicheskaya"/><!--
+			<use xlink:href="#st1" transform="translate(0,0)rotate(0)" id="Bugry"/>
+			<use xlink:href="#st1" transform="translate(0,30)rotate(0)" id="Prospekt Kultury"/>
+			<use xlink:href="#st1" transform="translate(0,60)rotate(0)" id="Sosnovka"/>-->
+			<use xlink:href="#st1" transform="translate(0,90)rotate(0)" id="Politekhnicheskaya"/>
+			<use xlink:href="#st1" transform="translate(0,120)rotate(0)" id="Ploschad_Muzhestva"/>
+			<use xlink:href="#st1" transform="translate(0,150)rotate(0)" id="Lesnaya"/>
+			<use xlink:href="#st1" transform="translate(0,180)rotate(0)" id="Vyborgskaya"/>
+			<use xlink:href="#std1" transform="translate(0,210)rotate(0)" id="Ploshchad_Lenina"/>
+			<use xlink:href="#st1" transform="translate(0,240)rotate(0)" id="Chernyshevskaya"/>
+			<use xlink:href="#intst1" transform="translate(0,270)rotate(0)" id="Ploshchad_Vosstaniya"/>
+			<use xlink:href="#intst1" transform="translate(0,350)rotate(0)" id="Vladimirskaya"/>
+		</g>
+		<use xlink:href="#intst1" transform="translate(412.7,517.3)rotate(0)" id="Pushkinskaya"/>
+
+		<use xlink:href="#std1" transform="translate(286,547)rotate(225)" id="Baltiyskaya"/>
+		<use xlink:href="#st1" transform="translate(256,577)rotate(225)" id="Narvskaya"/>
+		<use xlink:href="#intst1" transform="translate(226,607)rotate(225)" id="Kirovsky_Zavod"/>
+		<use xlink:href="#st1" transform="translate(180,670)rotate(0)" id="Avtovo"/>
+		<use xlink:href="#st1" transform="translate(180,700)rotate(0)" id="Leninsky_Prospekt"/>
+		<use xlink:href="#term1" transform="translate(180,730)rotate(0)" id="Prospekt_Veteranov"/><!--
+		<use xlink:href="#term1" transform="translate(120,727)rotate(225)" id="Ulyanka"/>
+		<use xlink:href="#term1" transform="translate(90,757)rotate(225)" id="Pulkovo"/>-->
+
+		<g transform="translate(330,130)">
+			<use xlink:href="#term2" transform="translate(0,0)rotate(0)" id="Parnas"/>
+			<use xlink:href="#st2" transform="translate(0,30)rotate(0)" id="Prospekt_Prosvescheniya"/>
+			<use xlink:href="#st2" transform="translate(0,60)rotate(0)" id="Ozerki"/>
+			<use xlink:href="#std2" transform="translate(0,90)rotate(0)" id="Udelnaya"/>
+			<use xlink:href="#st2" transform="translate(0,120)rotate(0)" id="Pionerskaya"/>
+			<use xlink:href="#st2" transform="translate(0,150)rotate(0)" id="Chornaya_Rechka"/>
+			<use xlink:href="#st2" transform="translate(0,180)rotate(0)" id="Petrogradskaya"/>
+			<use xlink:href="#st2" transform="translate(0,210)rotate(0)" id="Gorkovskaya"/>
+			<use xlink:href="#intst2" transform="translate(0,240)rotate(0)" id="Nevsky_Prospekt"/>
+			<use xlink:href="#intst2" transform="translate(0,330)rotate(315)" id="Sennaya_Ploshchad"/>
+			<g transform="translate(0,387)rotate(0)">
+				<!--330,600-->
+				<use xlink:href="#ele-int" x="0" y="0" id="Tekhnologichesky_Institut"/>
+				<use xlink:href="#intst2" x="0" y="0" transform="rotate(180)" id="Tekhnologichesky_Institut_2"/>
+				<use xlink:href="#intst1h" x="0" y="0" id="Tekhnologichesky_Institut_1"/>
+				<path d="M 0,0 l 0,-6 0,12 z" style="stroke:white;stroke-width:1"/>
+			</g>
+			<use xlink:href="#st2" transform="translate(0,450)rotate(0)" id="Frunzenskaya"/>
+			<use xlink:href="#intst2" transform="translate(0,485)rotate(0)" id="Moskovskiye_Vorota"/>
+			<use xlink:href="#st2" transform="translate(0,540)rotate(0)" id="Elektrosila"/>
+			<use xlink:href="#st2" transform="translate(0,570)rotate(0)" id="Park_Pobedy"/>
+			<use xlink:href="#st2" transform="translate(0,600)rotate(0)" id="Moskovskaya"/>
+			<use xlink:href="#st2" transform="translate(0,630)rotate(0)" id="Zvyozdnaya"/>
+			<use xlink:href="#termd2" transform="translate(0,660)rotate(0)" id="Kupchino"/>
+		</g>
+
+		<g transform="translate(30,100)"><!--
+			<use xlink:href="#term3" transform="translate(0,0)rotate(0)" id="Osinovaya_Roshcha"/>
+			<use xlink:href="#st3" transform="translate(0,30)rotate(0)" id="Pargolovo"/>
+			<use xlink:href="#st3" transform="translate(0,60)rotate(0)" id="Akademgorodok"/>
+			<use xlink:href="#st3" transform="translate(0,90)rotate(0)" id="Parashyutnaya"/>
+			<use xlink:href="#st3" transform="translate(0,120)rotate(0)" id="Zoopark"/>
+			<use xlink:href="#st3" transform="translate(0,150)rotate(0)" id="Yakhtennaya"/>-->
+			<use xlink:href="#term3" transform="translate(0,150)rotate(0)" id="Begovaya"/>
+			<use xlink:href="#st3" transform="translate(0,180)rotate(0)" id="Novokrestovskaya"/>
+			<use xlink:href="#st3" transform="translate(0,240)rotate(0)" id="Primorskaya"/>
+			<!--0,240-->
+		</g>
+		<use xlink:href="#st3" transform="translate(90,398)rotate(90)" id="Vasileostrovskaya"/><!--
+		<use xlink:href="#intst3" transform="translate(180,398)rotate(315)" id="Admiralteyskaya-2"/>-->
+		<use xlink:href="#intst3" transform="translate(330,398)rotate(315)" id="Gostiny_Dvor"/>
+		<use xlink:href="#intst3" transform="translate(480,398)rotate(315)" id="Mayakovskaya"/>
+		<use xlink:href="#intst3" transform="translate(630,450)rotate(0)" id="Ploshchad_Alexandra_Nevskogo-1"/>
+		<g transform="translate(630,550)">
+			<use xlink:href="#st3" transform="translate(0,0)rotate(0)" id="Yelizarovskaya"/>
+			<use xlink:href="#st3" transform="translate(0,30)rotate(0)" id="Lomonosovskaya"/>
+			<use xlink:href="#st3" transform="translate(0,60)rotate(0)" id="Proletarskaya"/>
+			<use xlink:href="#std3" transform="translate(0,90)rotate(0)" id="Obukhovo"/>
+			<use xlink:href="#termd3" transform="translate(0,120)rotate(0)" id="Rybatskoye"/>
+		</g><!--
+
+		<use xlink:href="#term4" transform="translate(340,4000)rotate(-45)" id="Yuntolovo"/>
+		<use xlink:href="#st4" transform="translate(380,4000)rotate(0)" id="Konnaya_Lakhta"/>
+		<use xlink:href="#st4" transform="translate(117,4000)rotate(0)" id="Lakhta"/>
+		<use xlink:href="#st4" transform="translate(147,4000)rotate(0)" id="Novokrestobskaya-2"/>
+		<use xlink:href="#st4" transform="translate(177,4000)rotate(0)" id="Morskoy_Fasad"/>
+		<use xlink:href="#st4" transform="translate(207,4000)rotate(0)" id="Shkiperskaya"/>
+		<use xlink:href="#st4" transform="translate(237,4000)rotate(0)" id="Bolshoy_Prospekt"/>-->
+		<g transform="translate(0,478)">
+			<use xlink:href="#termx4" transform="translate(90,0)rotate(270)" y="" id="Gorny_Institut"/>
+			<use xlink:href="#stx4" transform="translate(201,0)rotate(270)" y="" id="Teatralnaya"/>
+			<use xlink:href="#intst4" transform="translate(312,0)rotate(90)" id="Spasskaya"/>
+			<use xlink:href="#intst4" transform="translate(480,0)rotate(315)" id="Dostoyevskaya"/>
+			<use xlink:href="#st4" transform="translate(555,0)rotate(90)" id="Ligovsky_Prospekt"/>
+			<use xlink:href="#intst4" transform="translate(630,0)rotate(315)" id="Ploshchad_Alexandra_Nevskogo-2"/>
+			<use xlink:href="#st4" transform="translate(705,0)rotate(90)" id="Novocherkasskaya"/>
+		</g>
+		<g transform="translate(780,520)">
+			<use xlink:href="#std4" transform="translate(0,0)rotate(0)" id="Ladozhskaya"/>
+			<use xlink:href="#st4" transform="translate(0,30)rotate(0)" id="Prospekt_Bolshevikov"/>
+			<use xlink:href="#term4" transform="translate(0,60)rotate(0)" y="" id="Ulitsa_Dybenko"/><!--
+			<use xlink:href="#st4" transform="translate(0,90)rotate(0)" id="Kudrovo"/>
+			<use xlink:href="#term4" transform="translate(0,120)rotate(0)" id="Yugo-Vostochnaya"/>-->
+		</g>
+
+		<g transform="translate(180,100)"><!--
+			<use xlink:href="#term5" transform="translate(0,0)rotate(0)" id="Kolomyazhskaya"/>
+			<use xlink:href="#st5" transform="translate(0,30)rotate(0)" id="Kamenka"/>
+			<use xlink:href="#st5" transform="translate(0,60)rotate(0)" id="Magistral_31"/>
+			<use xlink:href="#st5" transform="translate(0,90)rotate(0)" id="Shuvalovskaya_Prospekt"/>-->
+			<use xlink:href="#term5" transform="translate(0,120)rotate(0)" id="Komendantsky_Prospekt"/>
+			<use xlink:href="#std5" transform="translate(0,150)rotate(0)" id="Staraya_Derevnya"/>
+			<use xlink:href="#st5" transform="translate(0,180)rotate(0)" id="Krestovsky_Ostrov"/>
+			<use xlink:href="#st5" transform="translate(0,210)rotate(0)" id="Chkalovskaya"/>
+			<use xlink:href="#st5" transform="translate(0,240)rotate(0)" id="Sportivnaya"/>
+			<use xlink:href="#st5" transform="translate(0,270)rotate(0)" id="Admiralteyskaya-1"/>
+		</g>
+		<use xlink:href="#intst5" transform="translate(312,442)rotate(270)" id="Sadovaya"/>
+		<use xlink:href="#intst5" transform="translate(412.7,545.3)rotate(0)" id="Zvenigorodskaya"/>
+		<use xlink:href="#intst5" transform="translate(450,580)rotate(315)" id="Obvodny_Kanal"/>
+		<g transform="translate(480,640)">
+			<use xlink:href="#st5"    transform="translate(0,0)rotate(0)" id="Volkovskaya"/>
+			<use xlink:href="#st5"    transform="translate(0,30)rotate(0)" id="Bukharestskaya"/>
+			<use xlink:href="#st5"  transform="translate(0,60)rotate(0)" id="Mezhdunarodnaya"/>
+			<use xlink:href="#st5"   transform="translate(0,90)rotate(0)" id="Prospekt_Slavy"/>
+			<use xlink:href="#st5"   transform="translate(0,120)rotate(0)" id="Dunayskaya"/>
+			<use xlink:href="#term5" transform="translate(0,150)rotate(180)" id="Shushary"/>
+		</g>
+		
+		<g>
+			<use xlink:href="#termx6" transform="translate(80,635)rotate(270)" id="Yugo-Zapadnaya"/>
+			<use xlink:href="#intstx6" transform="translate(226,635)rotate(215)" id="Putilovskaya"/>
+			<use xlink:href="#stx6" transform="translate(270,635)rotate(90)" id="Bronevaya"/>
+			<use xlink:href="#intstx6" transform="translate(310,635)rotate(270)" id="Zastavskaya"/>
+			<use xlink:href="#stx6" transform="translate(400,635)rotate(90)" id="Borovaya"/>
+			<use xlink:href="#intstx6" transform="translate(450,608)rotate(315)" id="Karetnaya"/>
+		</g>
+	</g>
+
+	<g id="text">
+		<g id="intchange_number" class="num ic mid" style="fill:#fff" transform="translate(0,3.5)">
+			<text x="480" y="370" id="Ploshchad_Vosstaniya_int">1</text>
+			<text x="480" y="450" id="Vladimirskaya_int">1</text>
+			<text x="412.7" y="517.3" id="Pushkinskaya_int">1</text>
+			<text x="226" y="607" id="Kirovsky_Zavod_int">1</text>
+			<text x="330" y="370" id="Nevsky_Prospekt_int">2</text>
+			<text x="330" y="460" id="Sennaya_Ploshchad_int">2</text>
+			<text x="330" y="615" id="Moskovskiye_Vorota_int">2</text>
+			<text x="330" y="398" id="Gostiny_Dvor_int">3</text>
+			<text x="480" y="398" id="Mayakovskaya_int">3</text>
+			<text x="630" y="450" id="Ploshchad_Alexandra_Nevskogo_1_int">3</text>
+			<text x="312" y="478" id="Spasskaya_int">4</text>
+			<text x="480" y="478" id="Dostoyevskaya_int">4</text>
+			<text x="630" y="478" id="Ploshchad_Alexandra_Nevskogo_2_int">4</text>
+			<text x="312" y="442" id="Sadovaya_int">5</text>
+			<text x="412.7" y="545.3" id="Zvenigorodskaya_int">5</text>
+			<text x="450" y="580" id="Obvodny_Kanal_int">5</text>
+			<g class="i">
+				<text x="226" y="635" id="Putilovskaya_int">6</text>
+				<text x="310" y="635" id="Zastavskaya_int">6</text>
+				<text x="450" y="608" id="Karetnaya_int">6</text>
+			</g>
+		</g>
+
+		<g style="stroke:white;stroke-width:2;stroke-linejoin:round">
+			<g id="stname" class="st" opacity="1" transform="translate(0,4)">
+				<g id="M1_stname">
+					<text x="492" y="100">Девяткино</text>
+					<text x="492" y="124">Гражданский<tspan x="492" dy="13">проспект</tspan></text>
+					<text x="492" y="160">Академическая</text><!--
+					<text x="562" y="100">Бугры</text>
+					<text x="562" y="130">Проспект Культуры</text>
+					<text x="562" y="160">Сосновка</text>-->
+					<text x="492" y="190">Политехническая</text>
+					<text x="492" y="220">Площадь Мужества</text>
+					<text x="492" y="250">Лесная</text>
+					<text x="492" y="280">Выборгская</text>
+					<text x="492" y="310">Площадь Ленина</text>
+					<text x="492" y="340">Чернышевская</text>
+					<g class="ic f1">
+						<text x="493" y="370">Площадь Восстания</text>
+						<text x="493" y="450">Владимирская</text>
+						<text x="438" y="517">Пушкинская</text>
+						<text x="215" y="596" class="end">Кировский завод</text>
+					</g>
+
+					<g class="end">
+						<text x="276" y="537">Балтийская</text>
+						<text x="246" y="567">Нарвская</text>
+						</g>
+					<text x="192" y="670">Автово</text>
+					<text x="192" y="700">Ленинский проспект</text>
+					<text x="192" y="730">Проспект Ветеранов</text>
+					<!--
+					<text x="192" y="730">Ульянка</text>
+					<text x="192" y="760">Пулково</text>-->
+				</g>
+
+				<g id="M2_stname">
+					<text x="342" y="130">Парнас</text>
+					<text x="342" y="155">Проспект<tspan x="342" dy="13">Просвещения</tspan></text>
+					<text x="342" y="190">Озерки</text>
+					<text x="342" y="220">Удельная</text>
+					<text x="342" y="250">Пионерская</text>
+					<text x="342" y="280">Чёрная речка</text>
+					<text x="342" y="310">Петроградская</text>
+					<text x="342" y="340">Горьковская</text>
+					<text x="343" y="370" class="ic f2">Невский проспект</text>
+					<text x="343" y="448" class="ic f2">Сенная<tspan x="343" dy="13">площадь</tspan></text>
+					<text x="306" y="515" class="ic end">Технологический институт</text>
+					<text x="342" y="580">Фрунзенская</text>
+					<text x="343" y="610" class="ic f2">Московские <tspan x="343" dy="13">ворота</tspan></text>
+					<text x="342" y="670">Электросила</text>
+					<text x="342" y="700">Парк Победы</text>
+					<text x="342" y="730">Московская</text>
+					<text x="342" y="760">Звёздная</text>
+					<text x="342" y="790">Купчино</text>
+				</g>
+
+				<g id="M3_stname"><!--
+					<text x="42" y="100" class="f3">Осиновая Роща</text>
+					<text x="42" y="130">Парголово</text>
+					<text x="42" y="160">Академгородок</text>
+					<text x="42" y="190">Парашютная</text>
+					<text x="42" y="220">Зоопарк</text>
+					<text x="42" y="250">Яхтенная</text>-->
+					<text x="42" y="250">Беговая</text>
+					<text x="42" y="280">Новокрестовская</text>
+					<text x="42" y="340">Приморская</text>
+					<text x="90" y="414" class="mid">Василеостровская</text>
+					<g class="ic f3"><!--
+						<text x="193" y="386">Адмиралтейская-2</text>-->
+						<text x="343" y="386">Гостиный двор</text>
+						<text x="493" y="386">Маяковская</text>
+						<text x="643" y="450">Площадь Александра Невского-1</text>
+					</g>
+					<text x="642" y="550">Елизаровская</text>
+					<text x="642" y="580">Ломоносовская</text>
+					<text x="642" y="610">Пролетарская</text>
+					<text x="642" y="640">Обухово</text>
+					<text x="642" y="670">Рыбацкое</text>
+				</g>
+
+				<g id="M4_stname"><!--
+					<text x="87" y="4000">Юнтолово</text>
+					<text x="87" y="4000">Конная Лахта</text>
+					<text x="87" y="4000">Лахта</text>
+					<text x="87" y="4000">Новокрестовская-2</text>
+					<text x="87" y="4000">Морской фасад</text>
+					<text x="87" y="4000">Шкиперская</text>-->
+					<g class="mid i x">
+						<text x="90"  y="461" dy="-13">Горный<tspan x="115">&#160;</tspan><tspan x="90" dy="13">институт</tspan></text>
+						<text x="201" y="461">Театральная</text>
+					</g>
+					<text x="322" y="496" class="ic f4 end">Спасская</text>
+					<text x="493" y="466" class="ic f4">Достоевская</text>
+					<text x="555" y="493" class="mid">Лиговский<tspan x="555" dy="13">проспект</tspan></text>
+					<text x="643" y="466" class="ic f4">Площадь Александра Невского-2</text>
+					<text x="705" y="493" class="mid">Новочеркасская</text>
+					<text x="792" y="520">Ладожская</text>
+					<text x="792" y="550">Проспект Большевиков</text>
+					<text x="792" y="580">Улица Дыбенко</text><!--
+					<text x="792" y="610">Кудрово</text>
+					<text x="792" y="640">Юго-Восточная</text>-->
+				</g>
+
+				<g id="M5_stname"><!--
+					<text x="192" y="100">Коломяжская</text>
+					<text x="192" y="130">Каменка</text>
+					<text x="192" y="160">Магистраль № 31</text>
+					<text x="192" y="190">Шуваловский проспект</text>-->
+					<text x="192" y="215">Комендантский<tspan x="192" dy="13">проспект</tspan></text>
+					<text x="192" y="250">Старая Деревня</text>
+					<text x="192" y="280">Крестовский остров</text>
+					<text x="192" y="310">Чкаловская</text>
+					<text x="192" y="340">Спортивная</text>
+					<text x="192" y="370">Адмиралтейская</text>
+					<g class="ic f5">
+						<text x="322" y="420" class="end">Садовая</text>
+						<text x="428" y="548">Звенигородская</text>
+						<text x="460" y="570">Обводный канал</text>
+					</g>
+					<text x="492" y="640">Волковская</text>
+					<text x="492" y="670">Бухарестская</text>
+					<text x="492" y="700">Международная</text>
+					<text x="492" y="730">Проспект Славы</text>
+					<text x="492" y="760">Дунайская</text>
+					<text x="492" y="790">Шушары</text>
+				</g>
+				
+				<g id="M6_stname" class="x i">
+					<text x="88" y="651" class="end">Юго-<tspan x="88" dy="13">Западная</tspan></text><!--y+16-->
+					<text x="270" y="651" class="mid">Броневая</text>
+					<text x="395" y="651">Боровая</text>
+					<g class="ic f6x">
+						<text x="201" y="620" class="end">Путиловская</text>
+						<text transform="translate(315,617)scale(0.94,1)" class="end">Заставская</text>
+						<text x="470" y="590">Каретная</text>
+					</g>
+				</g>
+			</g>
+		</g>
+
+		<use xlink:href="#stname"/>
+
+		<g class="num ic mid">
+			<text x="480" y="90" class="f1">M1</text>
+			<text x="180" y="750" class="f1">M1</text>
+			<text x="330" y="120" class="f2">M2</text>
+			<text x="330" y="810" class="f2">M2</text>
+			<text x="30" y="240" class="f3">M3</text>
+			<text x="630" y="690" class="f3">M3</text>
+			<text x="72" y="483" class="f4">M4</text><!--290-->
+			<text x="780" y="600" class="f4">M4</text>
+			<text x="180" y="210" class="f5">M5</text>
+			<text x="480" y="810" class="f5">M5</text>
+			<text x="62" y="640" class="f6x">M6</text><!-- x-18, y+5 --><!--
+			<text x="4000" y="1181" class="f6">M6</text>
+			<text x="4000" y="222" class="f7">M7</text>
+			<text x="4000" y="1015" class="f7">M7</text>
+			<text x="4000" y="740" class="f8">M8</text>
+			<text x="4000" y="605" class="f8">M8</text>-->
+			
+			<text x="145" y="493" class="f4">2024</text>
+			<text x="130" y="650" class="f6">2023</text>
+		</g>
+	</g>
+
+	<g id="train_icons">
+		<use xlink:href="#train" transform="translate(452,100)" id="Devyatkino_Stantsiya"><title>Станция Девяткино</title></use>
+		<use xlink:href="#train" transform="translate(457,310)" id="Finlyandsky_Vokzal"><title>Финляндский вокзал</title></use>
+		<use xlink:href="#train" transform="translate(493,412)" id="Moskovsky_Vokzal"><title>Московский вокзал</title></use>
+		<use xlink:href="#train" transform="translate(426,532)" id="Vitebsky_Vokzal"><title>Витебский вокзал</title></use>
+		<use xlink:href="#train" transform="translate(289,558)" id="Baltiysky_Vokzal"><title>Балтийский вокзал</title></use><!--
+		<use xlink:href="#train" transform="translate(123,818)" id="Ulyanka_Platforma"><title>Ulyanka rail platform</title></use>-->
+
+		<use xlink:href="#train" transform="translate(307,220)" id="Udelnaya_Platforma"><title>Платформа Удельная</title></use>
+		<use xlink:href="#train" transform="translate(302,790)" id="Kupchino_Platforma"><title>Платформа Купчино</title></use>
+
+		<use xlink:href="#train" transform="translate(607,640)" id="Obukhovo_Stantsiya"><title>Станция Обухово</title></use>
+		<use xlink:href="#train" transform="translate(602,670)" id="Rybatkoe_Stantsiya"><title>Станция Рыбацкое</title></use>
+
+		<use xlink:href="#train" transform="translate(757,520)" id="Ladozhsky_Vokzal"><title>Ладожский вокзал</title></use>
+
+		<use xlink:href="#train" transform="translate(157,250)" id="Staraya_Derevnya_Platforma"><title>Платформа Старая Деревня</title></use>
+
+		<use xlink:href="#train" transform="translate(263,668)" id="Bronevaya_Stantsiya"><title>Станция Броневая</title></use>
+		<use xlink:href="#train" transform="translate(375,648)" id="Borovaya_Platforma"><title>Платформа Боровая</title></use>
+	</g>
+
+	<g id="title_header" transform="translate(0,40)">
+		<path style="fill:#000;stroke:#000;stroke-width:2" d="
+		M -20,40 
+		H 380 q 28,0 48,-20 
+		l 2,-2 q 20,-20 48,-20 H -20
+		"/>
+		<clipPath id="clip1">
+			<path d="
+			M -20,40 
+			H 380 
+			q 28,0 48,-20 
+			q 20,-20 48,-20 
+			H -20
+			"/>
+		</clipPath>
+		<path clip-path="url(#clip1)" style="stroke:none;fill:url(#bshade1)" d="
+		m -30,20 
+		a 3000,3000 0 0,1 448,0 
+		q 10,1 0,10 
+		l -40,40 
+		h -400
+		"/>
+		<text xml:space='preserve' class="legendtext" x="6" y="25" style="fill:#fff"><tspan style="font-size:19px">Схема Петербургского метрополитена </tspan><tspan style="font-size:15px">(2020)</tspan></text>
+	</g>
+
+	<g id="legendbox_group" transform="translate(625,60)">
+		<g id="legend_lines">
+			<path style="stroke:#000;stroke-width:3;fill:none" d="
+			M 0,5 
+			V 215 a 20,20 0 0,0 20,20 
+			H 300 a 20,20 0 0,0 20,-20 
+			V 5 a 20,20 0 0,0 -20,-20 
+			H 20 a 20,20 0 0,0 -20,20
+			"/>
+			<path style="stroke:none;fill:#000" d="
+			M 0,10 
+			H 320 
+			V 5 a 20,20 0 0,0 -20,-20 
+			H 20 a 20,20 0 0,0 -20,20
+			"/>
+			<clipPath id="clip2">
+				<path d="
+				M 1,7 
+				H 318.5 
+				V 5 a 18.5,18.5 0 0,0 -18.5,-18.5 
+				H 19.5 a 18.5,18.5 0 0,0 -18.5,18.5
+				"/>
+			</clipPath>
+			<path clip-path="url(#clip2)" style="stroke:none;fill:url(#bshade2)" d="
+			M 1.5,15 
+			v -9 
+			q 0,-7 10,-8 
+			a 1200,1200 0 0,1 285,12 
+			q 7,1 4,6 
+			l -25,20
+			"/>
+			<text class="legendtext mid" x="160" y="3" style="fill:#fff;font-size:17px">Линии</text>
+
+			<g id="legendg1" transform="translate(10,15)">
+				<g class="me" style="stroke-linecap:round">
+					<path d="M 5,17.5 H 55" class="s1" id="route1color"/>
+					<path d="M 5,52.5 H 55" class="s2" id="route2color"/>
+					<path d="M 5,87.5 H 55" class="s3" id="route3color"/>
+					<path d="M 5,122.5 H 55" class="s4" id="route4color"/>
+					<path d="M 5,157.5 H 55" class="s5" id="route5color"/>
+					<g class="s6">
+						<path d="M 5,192.5 H 55" id="route6color"/>
+					</g>
+					<use xlink:href="#route6color" class="mex"/>
+				</g>
+				
+				<g>
+					<use xlink:href="#st1" transform="translate(30,17.5)rotate(-90)"/>
+					<use xlink:href="#st2" transform="translate(30,52.5)rotate(-90)"/>
+					<use xlink:href="#st3" transform="translate(30,87.5)rotate(-90)"/>
+					<use xlink:href="#st4" transform="translate(30,122.5)rotate(-90)"/>
+					<use xlink:href="#st5" transform="translate(30,157.5)rotate(-90)"/>
+					<use xlink:href="#stx6" transform="translate(30,192.5)rotate(-90)"/>
+				</g>
+
+				<text class="num ic">
+					<tspan x="66" y="20" class="f1">M1</tspan>
+					<tspan x="66" dy="35" class="f2">M2</tspan>
+					<tspan x="66" dy="35" class="f3">M3</tspan>
+					<tspan x="66" dy="35" class="f4">M4</tspan>
+					<tspan x="66" dy="35" class="f5">M5</tspan>
+					<tspan x="66" dy="35" class="f6x i">M6</tspan>
+				</text>
+				<text class="st">
+					<tspan x="90" y="20">Кировско-Выборгская линия</tspan>
+					<tspan x="90" dy="35">Московско-Петроградская линия</tspan>
+					<tspan x="90" dy="35">Невско-Василеостровская линия</tspan>
+					<tspan x="90" dy="35">Правобережная линия</tspan>
+					<tspan x="90" dy="35">Фрунзенско-Приморская линия</tspan>
+				</text>
+				<text transform="translate(90,195)scale(0.94,1)" class="st x i">Красносельско-Калининская линия</text>
+			</g>
+		</g>
+	</g>
+
+	<g id="symbol_group" class="st mid" transform="translate(0,840)">
+		<path style="stroke-width:2;stroke:#000;fill:#000" d="
+		M -50,0 
+		H 1250 580 c -20,0 -20,-20 -40,-20 
+		H 410 c -20,0 -20,20 -40,20 
+		z"/>
+		<clipPath id="clip3">
+			<path d="
+			M 580,0 
+			c -20,0 -20,-20 -40,-20 
+			H 410 
+			c -20,0 -20,20 -40,20
+			"/>
+		</clipPath>
+		<path id="buttonshade" clip-path="url(#clip3)" style="stroke:none;fill:url(#bshade2)" d="
+		M 400,-10 
+		a 1000,1000 0 0,0 150,-5 
+		q 5,-3 -10,-8 
+		h -136 
+		l -9,8 q -5,4.5 0,4.7
+		"/>
+		<text x="50%" y="-6" style="fill:#fff">Легенда</text>
+
+		<g id="line_legendbox_group" transform="translate(30,40)">
+
+			<g id="term_legendbox_group" transform="translate(60,0)">
+				<path class="me s1" style="stroke-linecap:round" d="M 0,0 L 520,0"/>
+				<use xlink:href="#term1" transform="translate(0,0)rotate(90)"/>
+				<text class="num ic f1" x="0" y="-15">M1</text>
+				<text x="0" y="25">Конечная станция</text>
+			</g>
+
+			<g id="st_legendbox_group" transform="translate(210,0)">
+				<use xlink:href="#st1" transform="translate(0,0)rotate(90)"/>
+				<text x="0" y="25">Станция</text>
+			</g>
+
+			<g id="int_legendbox_group" transform="translate(360,0)">
+				<path class="me s2" style="stroke-linecap:round" d="
+				M -50,-20 
+				l 166,0 q 14,0 24,10
+				l 22,22
+				"/>
+				<use xlink:href="#int2" transform="translate(0,0)rotate(-45)"/>
+				<use xlink:href="#intst1" transform="translate(0,0)rotate(90)"/>
+				<use xlink:href="#intst2" transform="translate(19.8,-19.8)rotate(90)"/>
+				<g class="num ic" style="fill:#fff" transform="translate(0,3.5)">
+					<text x="0" y="0">1</text>
+					<text x="19.8" y="-19.8">2</text>
+				</g>
+				<text x="0" y="25" class="ic">Станции<tspan x="0" dy="15">пересадок</tspan></text>
+			</g>
+
+			<g id="crossint_legendbox_group" transform="translate(510,0)">
+				<use xlink:href="#ele-int" x="0" y="0"/>
+				<use xlink:href="#intst1" transform="translate(0,0)rotate(90)"/>
+				<use xlink:href="#intst2h" transform="translate(0,0)rotate(180)"/>
+				<path d="M 0,0 l 0,-6 0,12 z" style="stroke:white;stroke-width:1"/>
+				<text class="ic" x="0" y="25">Кросс-платформенная<tspan x="0" dy="15">пересадка</tspan></text>
+			</g>
+
+			<g id="rail_terminal_group" transform="translate(660,0)">
+				<use xlink:href="#train" transform="translate(-10,0)rotate(0)"/>
+				<text x="0" y="25">Ж.Д. вокзал /<tspan x="0" dy="15">станция / платформа</tspan></text>
+			</g>
+
+			<g id="waterway_legendbox_group" transform="translate(810,0)">
+				<path style="fill:none;stroke:#e2fcfc;stroke-width:15" d="M -40,0 L 40,0"/>
+				<text x="0" y="25">Водный путь</text>
+			</g>
+
+		</g>
+	</g>
+
+</svg>

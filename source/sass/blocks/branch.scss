@@ -1,0 +1,28 @@
+.branch__btn-wrapper {
+  position: relative;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+
+.dib {
+  display: block;
+}
+
+.branch__btn-wrapper span {
+  cursor: pointer;
+}
+
+.branch__btn-wrapper span:hover + button {
+  background-color: blueviolet;
+}
+
+.branch__btn-wrapper span:hover {
+  background: pink;
+}
+
+
+
+
+

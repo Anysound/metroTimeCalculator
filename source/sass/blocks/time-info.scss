@@ -1,0 +1,38 @@
+.time-info {
+  width: calc(100% - 1250px);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.time-info__title {
+  text-align: center;
+}
+
+.time-info__start-station {
+  position: relative;
+  color: #222;
+  border: 2px solid #009a49;
+  padding: 5px;
+  border-radius: 5px;
+  height: 20px;
+}
+
+.time-info__end-station {
+  color: #222;
+  position: relative;
+  border: 2px solid #009a49;
+  padding: 5px;
+  border-radius: 5px;
+  height: 20px;
+}
+
+.time-info__delete {
+  opacity: 0;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  border-radius: 50%;
+  background: #e6e6e6;
+  width: 25px;
+  height: 25px;
+}
