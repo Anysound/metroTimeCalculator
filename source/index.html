@@ -679,33 +679,33 @@
       <g style="stroke:white;stroke-width:2;stroke-linejoin:round">
         <g id="stname" class="st" opacity="1" transform="translate(0,4)">
           <g id="M1_stname">
-            <text x="492" y="100" class="station devyatkino">Девяткино</text>
-            <text x="492" y="124" class="station grazhdanskiy-pr">Гражданский <tspan x="492" dy="13">проспект</tspan></text>
-            <text x="492" y="160" class="station academka">Академическая</text>
+            <text x="492" y="100" class="station red-branch devyatkino">Девяткино</text>
+            <text x="492" y="124" class="station red-branch grazhdanskiy-pr">Гражданский <tspan x="492" dy="13">проспект</tspan></text>
+            <text x="492" y="160" class="station red-branch academka">Академическая</text>
             <!--
             <text x="562" y="100">Бугры</text>
             <text x="562" y="130">Проспект Культуры</text>
             <text x="562" y="160">Сосновка</text>-->
-            <text x="492" y="190" class="station politehnicheskaya">Политехническая</text>
-            <text x="492" y="220" class="station ploshad-muzhestva">Площадь Мужества</text>
-            <text x="492" y="250" class="station lesnaya">Лесная</text>
-            <text x="492" y="280" class="station viborgskaya">Выборгская</text>
-            <text x="492" y="310" class="station ploshad-lenina">Площадь Ленина</text>
-            <text x="492" y="340" class="station chernishevsckaya">Чернышевская</text>
+            <text x="492" y="190" class="station red-branch politehnicheskaya">Политехническая</text>
+            <text x="492" y="220" class="station red-branch ploshad-muzhestva">Площадь Мужества</text>
+            <text x="492" y="250" class="station red-branch lesnaya">Лесная</text>
+            <text x="492" y="280" class="station red-branch viborgskaya">Выборгская</text>
+            <text x="492" y="310" class="station red-branch ploshad-lenina">Площадь Ленина</text>
+            <text x="492" y="340" class="station red-branch chernishevsckaya">Чернышевская</text>
             <g class="ic f1">
-              <text x="493" y="370" class="station ploshad-vos">Площадь Восстания</text>
-              <text x="493" y="450" class="station vladimirskaya">Владимирская</text>
-              <text x="438" y="517" class="station pushkinskaya">Пушкинская</text>
+              <text x="493" y="370" class="station red-branch ploshad-vos">Площадь Восстания</text>
+              <text x="493" y="450" class="station red-branch vladimirskaya">Владимирская</text>
+              <text x="438" y="517" class="station red-branch pushkinskaya">Пушкинская</text>
               <text x="215" y="596" class="end station kirovskiy-zavod">Кировский завод</text>
             </g>
 
             <g class="end">
-              <text x="276" y="537" class="station baltiyskaya">Балтийская</text>
-              <text x="246" y="567" class="station narvskaya">Нарвская</text>
+              <text x="276" y="537" class="station red-branch baltiyskaya">Балтийская</text>
+              <text x="246" y="567" class="station red-branch narvskaya">Нарвская</text>
             </g>
-            <text x="192" y="670" class="station avtovo">Автово</text>
-            <text x="192" y="700" class="station leninskiy-pr">Ленинский проспект</text>
-            <text x="192" y="730" class="station pr-veteranov">Проспект Ветеранов</text>
+            <text x="192" y="670" class="station red-branch avtovo">Автово</text>
+            <text x="192" y="700" class="station red-branch leninskiy-pr">Ленинский проспект</text>
+            <text x="192" y="730" class="station red-branch pr-veteranov">Проспект Ветеранов</text>
             <!--
             <text x="192" y="730">Ульянка</text>
             <text x="192" y="760">Пулково</text>-->
@@ -1082,11 +1082,20 @@
     <div class="time-info__start">
       <h2 class="time-info__title">Время поездки</h2>
       <h3>Откуда едем:</h3>
-      <div class="time-info__start-station" value=""></div>
+      <div class="time-info__start-station" value="">
+        <p class="time-info__start-station-title"></p>
+        <div class="time-info__delete"></div>
+      </div>
     </div>
     <div class="time-info__end">
       <h3>Куда едем:</h3>
-      <div class="time-info__end-station" value=""></div>
+      <div class="time-info__end-station" value="">
+        <p class="time-info__end-station-title"></p>
+        <div class="time-info__delete"></div>
+      </div>
+    </div>
+    <div class="time-info__total">
+      Время поездки около
     </div>
   </section>
   <script src="js/scripts.min.js"></script>

@@ -18,21 +18,46 @@
 }
 
 .time-info__end-station {
-  color: #222;
   position: relative;
+  color: #222;
   border: 2px solid #009a49;
   padding: 5px;
   border-radius: 5px;
   height: 20px;
 }
 
+.time-info__start-station-title,
+.time-info__end-station-title {
+  margin: 0;
+  transition: all .3s;
+}
+
 .time-info__delete {
   opacity: 0;
   position: absolute;
+  transition: all .4s;
+  transform: translateX(40px);
   top: 3px;
   right: 3px;
   border-radius: 50%;
   background: #e6e6e6;
   width: 25px;
   height: 25px;
+
+  &::after {
+    content: '\274C';
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    color: #888;
+    
+  }
 }
+
+.time-info__delete--show {
+  opacity: 1;
+  transition: all .4s;
+  transform: translateX(0);
+}
+
+
